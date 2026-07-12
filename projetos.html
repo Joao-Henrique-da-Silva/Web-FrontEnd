@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos – João Henrique da Silva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fcf6f3; color: #2C1810; padding: 40px 20px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .page-title { text-align: center; font-size: 36px; font-weight: 700; color: #5C0000; margin-bottom: 40px; position: relative; }
+        .page-title::after { content: ''; display: block; width: 60px; height: 4px; background: #CC3300; margin: 10px auto 0; border-radius: 4px; }
+        .projetos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; margin-top: 10px; }
+        .projeto-card { background: #fff; border-radius: 20px; padding: 24px 22px; box-shadow: 0 4px 16px rgba(139, 0, 0, 0.06); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #f5e0d8; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 8px; }
+        .projeto-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(139, 0, 0, 0.12); border-color: #cc3300; }
+        .projeto-header { display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #7a4a3a; }
+        .projeto-header i { font-size: 26px; color: #cc3300; }
+        .linguagem { background: #fae6df; padding: 2px 12px; border-radius: 30px; font-size: 11px; font-weight: 600; color: #8b0000; }
+        .projeto-card h3 { font-size: 18px; font-weight: 700; color: #5c0000; margin: 4px 0 2px; }
+        .projeto-card p { font-size: 14px; color: #3d2a22; flex-grow: 1; margin-bottom: 6px; }
+        .projeto-footer { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #8b0000; border-top: 1px solid #f0d5cc; padding-top: 12px; margin-top: 4px; }
+        .projeto-footer .link-icon { background: #cc3300; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
+        .projeto-card:hover .link-icon { background: #8b0000; }
+        @media (max-width: 768px) { .projetos-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 480px) { .projetos-grid { grid-template-columns: 1fr; } .page-title { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">🚀 Meus Projetos no GitHub</h1>
+        <div class="projetos-grid">
+            <!-- Todos os cards com link para repositórios -->
+            <a href="https://github.com/Joao-Henrique-da-Silva/Web-FrontEnd" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-code"></i><span class="linguagem">HTML/CSS/JS</span></div>
+                <h3>Web-FrontEnd</h3>
+                <p>Estudos e práticas de front-end</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/5-Projeto-Univesp---SmartMed" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-heartbeat"></i><span class="linguagem">CSS</span></div>
+                <h3>SmartMed</h3>
+                <p>Projeto UNIVESP – Sistema de saúde inteligente</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/zod" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-shield-alt"></i><span class="linguagem">CSS</span></div>
+                <h3>Zod</h3>
+                <p>Estudos sobre validação de dados com Zod</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/use-effect" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-sync-alt"></i><span class="linguagem">TypeScript</span></div>
+                <h3>useEffect</h3>
+                <p>Explorando o hook useEffect no React</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/visualizador-perfil-github" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fab fa-github"></i><span class="linguagem">JavaScript</span></div>
+                <h3>Visualizador de Perfil GitHub</h3>
+                <p>Consome API do GitHub para exibir dados de usuários</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/dq2.0-visualizador-perfil-github-main" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fab fa-github"></i><span class="linguagem">JavaScript</span></div>
+                <h3>DQ2.0 – Visualizador Perfil</h3>
+                <p>Versão aprimorada do visualizador de perfil (curso DEVquest)</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/conversor-js" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-exchange-alt"></i><span class="linguagem">JavaScript</span></div>
+                <h3>Conversor JS</h3>
+                <p>Conversor de moedas / unidades com JavaScript</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/05-estrutura-react" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fab fa-react"></i><span class="linguagem">CSS</span></div>
+                <h3>Estrutura React</h3>
+                <p>Organização de componentes React</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/React" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fab fa-react"></i><span class="linguagem">CSS</span></div>
+                <h3>React – Estudos</h3>
+                <p>Fundamentos e hooks do React</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/gatos-da-praca-2026" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-cat"></i><span class="linguagem">JavaScript</span></div>
+                <h3>Gatos da Praça 2026</h3>
+                <p>Projeto Integrador 3 – UNIVESP</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <a href="https://github.com/Joao-Henrique-da-Silva/01-hook-useState" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-hook"></i><span class="linguagem">TypeScript</span></div>
+                <h3>useState – Hook</h3>
+                <p>Estudo aprofundado do useState no React com TypeScript</p>
+                <div class="projeto-footer"><span><i class="fab fa-github"></i> Ver no GitHub</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+            <!-- E-commerce mantém link para página publicada -->
+            <a href="https://joao-henrique-da-silva.github.io/ecommerce-syntaxwear2" target="_blank" class="projeto-card">
+                <div class="projeto-header"><i class="fas fa-shopping-cart"></i><span class="linguagem">CSS</span></div>
+                <h3>E-commerce SyntaxWear</h3>
+                <p>Loja virtual (projeto de estudos) - <strong>site no ar</strong></p>
+                <div class="projeto-footer"><span><i class="fas fa-globe"></i> Visitar site</span><span class="link-icon"><i class="fas fa-arrow-right"></i></span></div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
