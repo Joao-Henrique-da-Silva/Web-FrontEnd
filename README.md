@@ -18,6 +18,7 @@
 
 <!-- Badges coloridos (estilo mais chamativo) -->
 <p align="center">
+  <a href="https://joao-henrique-da-silva.github.io/Web-FrontEnd/">
   <a href="https://www.linkedin.com/in/joão-henrique-da-silva-27113797/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
